@@ -1,0 +1,363 @@
+/*GENERAL STYLES*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(33, 33, 33, 1);
+  background-color: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+}
+:root {
+  --main-studio-color: rgba(33, 150, 243, 1);
+  --site-nav-color: rgba(33, 33, 33, 1);
+  --logo-second-parth: rgba(0, 0, 0, 1);
+  --header-contact-color: rgba(117, 117, 117, 1);
+  --main-text-color: rgba(255, 255, 255, 1);
+  --hero-background-color: rgba(47, 48, 58, 1);
+  --active-button-color: rgba(24, 140, 232, 1);
+  --description-main-color: #757575;
+  --line-up-background-color: rgba(255, 255, 255, 1);
+  --bottom-logo-color: rgba(255, 255, 255, 1);
+  --bottom-contact-color: rgba(255, 255, 255, 0.6);
+  --footer-color: #2f303a;
+  --filter-option-color: #f5f4fa;
+  --projects-name-color: #212121;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  border: 0;
+}
+
+.main-sections-padding {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*HEADER STYLE*/
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-up,
+.logo-bottom {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  width: 145px;
+  margin-right: 95px;
+}
+
+.logo-first-parth {
+  color: var(--main-studio-color);
+}
+
+.logo-second-parth {
+  color: var(--logo-second-parth);
+}
+
+.site-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.site-list a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--site-nav-color);
+  padding: 32px 0;
+  display: block;
+}
+
+.site-links:hover,
+.contacts-up:hover,
+.contacts-bottom:hover,
+.studio-adress:hover,
+.site-links:focus,
+.contacts-up:focus,
+.contacts-bottom:focus,
+.studio-adress:focus {
+  color: var(--main-studio-color);
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts > :not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-up {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--header-contact-color);
+  display: block;
+  padding: 32px 0;
+}
+
+/*MAIN STYLES*/
+.hero {
+  background-color: var(--hero-background-color);
+  padding: 200px 0;
+}
+
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 40);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  width: 700px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  background: var(--main-studio-color);
+  color: var(--main-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 215px;
+  min-height: 50px;
+  padding: 10px 30px;
+  border: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--active-button-color);
+}
+
+.features {
+  padding-bottom: 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-list h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.features-list p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--description-main-color);
+  width: 270px;
+}
+
+.our-team {
+  background-color: var(--filter-option-color);
+}
+
+.about-title,
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-imgs {
+  display: flex;
+  gap: 30px;
+}
+
+.line-up {
+  display: flex;
+  gap: 30px;
+}
+
+.line-up li {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--line-up-background-color);
+  padding-bottom: 30px;
+}
+
+.line-up img {
+  margin-bottom: 30px;
+}
+
+.line-up h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.line-up p {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: var(--description-main-color);
+  text-align: center;
+}
+
+/*FOOTER*/
+
+.bottom-info {
+  background: var(--footer-color);
+  padding: 60px 0;
+}
+
+.logo-bottom-parth {
+  color: var(--bottom-logo-color);
+}
+
+.logo-bottom {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.adress-list > :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.studio-adress {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  font-style: normal;
+  color: var(--main-text-color);
+  display: block;
+}
+
+.contacts-bottom {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--bottom-contact-color);
+  display: block;
+}
+/*PORTFOLIO*/
+
+.our-pojects {
+  padding: 94px 0;
+}
+
+.filter-options {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.filter-option {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  cursor: pointer;
+  background: var(--filter-option-color);
+  border-radius: 4px;
+  font-family: "Roboto";
+  padding: 6px 25px;
+}
+
+.filter-option:hover,
+.filter-option:focus {
+  background: var(--main-studio-color);
+  color: var(--main-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-list:nth-child(3) {
+  margin-right: 0;
+}
+
+.project-list li {
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
+}
+
+.card {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.project-list h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--projects-name-color);
+}
+
+.project-list p {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--description-main-color);
+}
